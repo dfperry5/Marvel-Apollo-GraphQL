@@ -51,7 +51,7 @@ class HeroAPI extends RESTDataSource {
         : {}
       }
       
-      getLaunchesByIds({ heroIds }) {
+      getHeroByIds({ heroIds }) {
         return Promise.all(
             heroIds.map(heroId => this.getHeroById({ heroId })),
         );
